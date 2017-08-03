@@ -1,7 +1,7 @@
 import Ember from 'ember';
 import ENV from '../config/environment';
 
-export function initialize() {
+export function initialize(app) {
   if (Honeybadger) {
     var apiKey = Ember.get(ENV, 'honeybadger.apiKey');
     var environment = Ember.get(ENV, 'honeybadger.environment');
